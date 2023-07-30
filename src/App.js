@@ -38,7 +38,7 @@ export default function App() {
         {list.map((todo) => (
           <li key={todo.id}>
             {todo.todo}
-            <button>&times;</button>
+            <button  onClick={() => deleteTodo(todo.id)}>&times;</button>
           </li>
         ))}
       </ul>
